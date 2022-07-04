@@ -1,8 +1,13 @@
 import "./App.css";
-import { useState } from "react";
+import { useState, useEffect } from "react";
+
 import ItemTodo from "./components/ItemToDo/ItemTodo";
 
 function App() {
+  useEffect(() => {
+    // Inside this callback function we perform our side effects.
+   });
+
   const [listToDo, setListTodo] = useState([]);
   const [inputName, setInputName] = useState("");
   const [editing, setEditing] = useState(false);
